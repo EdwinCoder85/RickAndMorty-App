@@ -1,152 +1,145 @@
 .resident {
-    background-color: var(--bg-card);
-    color: white;
-    width: 100%;
-    max-width: 320px;
-    border-radius: 0.8em;
-    overflow: hidden;
-    transition: transform 200ms ease;
+  background-color: var(--bg-card);
+  color: white;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0.8em;
+  overflow: hidden;
+  transition: transform 200ms ease;
 }
 
 .resident:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .resident__header {
-    position: relative;
+  position: relative;
 }
 
 .resident__image {
-    width: 100%;
+  width: 100%;
 }
 
 .resident__status {
-    width: max-content;
-    background-color: var(--bg-card);
-    position: absolute;
-    left: 0;
-    top: 1.5em;
-    padding: 0.3em;
-    padding-left: 0.5em;
-    padding-right: 1.5em;
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
-    border-radius: 0 0.5em 0.5em 0;
+  width: max-content;
+  background-color: var(--bg-card);
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  padding: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  border-radius: 0 0.5em 0.5em 0;
 }
 
 .resident__status-circle {
-    width: 0.9em;
-    aspect-ratio: 1;
-    background-color: #aaa;
-    border-radius: 50%;
+  width: 0.9em;
+  aspect-ratio: 1;
+  background-color: #aaa;
+  border-radius: 50%;
 }
 
 .Alive {
-    background-color: var(--color-green);
+  background-color: var(--color-green);
 }
 
 .Dead {
-    background-color: rgb(205, 12, 12);
+  background-color: rgb(205, 12, 12);
 }
 
 .resident__body {
-    padding: 1em 0.8em 2em;
+  padding: 1em 0.8em 2em;
 }
 
 .resident__name {
-    color: var(--color-green);
-    text-align: center;
+  color: var(--color-green);
+  text-align: center;
 }
 
 .resident__line {
-    margin-top: 1rem;
-    margin-bottom: 1em;
-    border-color: #aaa3;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  border-color: #aaa3;
 }
 
 .resident__list {
-    display: grid;
-    gap: 0.8em;
+  display: grid;
+  gap: 0.8em;
 }
 
 .resident__item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
 }
 
 .resident__label {
-    color: #aaa;
-    font-weight: 300;
+  color: #aaa;
+  font-weight: 300;
 }
 
 .resident__item-value {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
-.resident_filtrar {
-    width: 60%;
-	max-width: 25rem;
-	margin: 3rem auto;
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
+.resident__search {
+  width: 60%;
+  max-width: 25rem;
+  /* margin: 3rem auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-input {
-    border: none;
-	border-radius: 0.5rem 0 0 0.5rem;
-	outline: #08b2c9;
-	width: 50%;
+.resident__search-input {
+  border: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  outline: #08b2c9;
+  width: 50%;
 }
 
-button {
-    font-size: 15px;
-    border: none;
-	border-radius: 0 0.5rem 0.5rem 0;
-    outline: #08b2c9;
-	width: 20%;
+.resident__search-button {
+  font-size: 15px;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  outline: #08b2c9;
+  width: 20%;
+  background-color: #8fc53d;
+  color: white;
 }
 
 .resident__content {
-    color: white;
-    width: 100%;
-    max-width: 500px;
-    background-color: var(--bg-card);
-    margin: 2rem auto 4rem;
-    padding: 1.5rem 2rem; 
-    border-radius: 1em;
-    text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--bg-card);
+  margin: 2rem auto 4rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1em;
+  text-align: center;
 }
 
 .resident__content-name {
-    color: var(--color-green);
-    margin-bottom: 1rem;
+  color: var(--color-green);
+  margin-bottom: 1rem;
 }
 
 .resident__content-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .resident__content-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.resident__content-label {
-    /* margin: 0 auto; */
-
+  display: flex;
+  flex-direction: column;
 }
 
 .resident__content-item-value {
-    padding: .5rem;
-    color: #aaa;
-    font-weight: 300;
+  padding: 0.5rem;
+  color: #aaa;
+  font-weight: 300;
 }
-
-
-
-

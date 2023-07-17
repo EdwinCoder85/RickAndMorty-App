@@ -1,7 +1,8 @@
 const LocationInfo = ({ location }) => {
+
   return (
     <article className="resident__content">
-      <h2 className="resident__content-name">{location?.name}</h2>
+      <h2 className="resident__content-name">{location.name}</h2>
       <ul className="resident__content-list">
         <li className="resident__content-item">
           <span className="resident__content-label">Type: </span>

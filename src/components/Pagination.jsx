@@ -28,12 +28,12 @@ const Pagination = ({
   return (
     <div className="pagination">
       <button
-            onClick={onPreviusPage}
-            disabled={currentPage == pages[0] ? true : false}
-            className={currentPage == 1 ? "disabled" : ""}
-          >
-            {'<<'}
-    </button>
+        onClick={onPreviusPage}
+        disabled={currentPage == pages[0] ? true : false}
+        className={currentPage == 1 ? "disabled" : ""}
+      >
+        {'<<'}
+      </button>
       {pages.map((page, index) => {
         return (
           <button
@@ -46,12 +46,12 @@ const Pagination = ({
         );
       })}
       <button
-            onClick={onNextPage}
-            disabled={currentPage == pages[pages.length - 1] ? true : false}
-            className={currentPage >= pages.length  ? "disabled" : ""}
-          >
-          {'>>'}
-        </button>
+        onClick={onNextPage}
+        disabled={currentPage == pages[pages.length - 1] ? true : false}
+        className={currentPage >= pages.length ? "disabled" : ""}
+      >
+        {'>>'}
+      </button>
     </div>
   );
 };
